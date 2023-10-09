@@ -1,0 +1,21 @@
+.main__line {
+  border-top: 1px solid #DADADA;
+  width: 100%;
+}
+
+.main__title {
+  font-size: 22px;
+  letter-spacing: -1px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0 0 23px 0;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 450px) {
+  .main__title {
+    font-size: 18px;
+    margin: 0 0 28px 0;
+    line-height: 22px;
+  }
+}
