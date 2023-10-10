@@ -4,8 +4,8 @@ import './AboutProject.css';
 function AboutProject() {
   return(
     <section id="about-project" className="about-project">
-      <h2 className="main__title about-project__title">О проекте</h2>
-      <div className="main__line about-project__line"></div>
+      <h2 className="about-project__title">О проекте</h2>
+      <div className="about-project__line"></div>
       <article className="about-project__item">
         <div className="about-project__column">
           <p className="about-project__heading">Дипломный проект включал 5 этапов</p>
@@ -20,11 +20,11 @@ function AboutProject() {
           </p>
           </div>
       </article>
-      <article className="line-steps">
-        <p className="line-steps_green">1 неделя</p>
-        <p className="line-steps_grey">4 недели</p>
-        <p className="line-steps_article">Back-end</p>
-        <p className="line-steps_article">Front-end</p>
+      <article className="about-project__steps">
+        <p className="about-project__steps-green">1 неделя</p>
+        <p className="about-project__steps-gray">4 недели</p>
+        <p className="about-project__article">Back-end</p>
+        <p className="about-project__article">Front-end</p>
       </article>
     </section>
   );

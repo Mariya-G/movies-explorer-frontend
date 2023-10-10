@@ -10,8 +10,8 @@ function PageNotFound() {
 
   return (
     <section  className="page-not-found">
-      <p className="page-not-found__title_xl">404</p>
-      <p className="page-not-found__title">Страница не найдена</p>
+      <p className="page-not-found__title">404</p>
+      <p className="page-not-found__subtitle">Страница не найдена</p>
       <button className="page-not-found__back" onClick={goBack}>Назад</button>
     </section>
   );

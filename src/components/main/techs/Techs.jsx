@@ -5,8 +5,8 @@ function Techs() {
   return (
     <section id="techs" className="techs">
       <article className="techs__container">
-        <h2 className="main__title techs__title">Технологии</h2>
-        <div className="main__line techs__line"></div>
+        <h2 className="techs__title">Технологии</h2>
+        <div className="techs__line"></div>
         <article className="techs__article">
           <p className="techs__heading">7 технологий</p>
           <p className="techs__paragraph">

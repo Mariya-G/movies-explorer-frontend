@@ -5,14 +5,14 @@
   flex-direction: column;
 }
 
-.page-not-found__title_xl {
+.page-not-found__title{
   font-size: 140px;
   line-height: 1.1;
   color: #fff;
   margin: 173px 0 0 0;
 }
 
-.page-not-found__title {
+.page-not-found__subtitle {
   font-size: 16px;
   line-height: 1.1;
   color: #fff;
@@ -35,19 +35,19 @@
 }
 
 @media screen and (max-width: 768px) {
-  .page-not-found__title_xl {
+  .page-not-found__title {
     margin: 340px 0 0 0;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .page-not-found__title_xl {
+  .page-not-found__title {
     font-size: 80px;
     line-height: 0;
     margin: 303px 0 0 0;
   }
 
-  .page-not-found__title {
+  .page-not-found__subtitle {
     font-size: 12px;
     line-height: 15;
     color: #fff;

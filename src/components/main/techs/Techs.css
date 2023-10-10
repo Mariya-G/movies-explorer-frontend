@@ -2,6 +2,20 @@
   background-color: #272727;
 }
 
+.techs__line {
+  border-top: 1px solid #DADADA;
+  width: 100%;
+}
+
+.techs__title {
+  font-size: 22px;
+  letter-spacing: -1px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0 0 23px 0;
+  line-height: 1.2;
+}
+
 .techs__container {
   max-width: calc(1280px - 140px);
   margin: 0 auto;
@@ -114,6 +128,12 @@
 
   .techs__line {
     border-color: #000;
+  }
+
+  .techs__title {
+    font-size: 18px;
+    margin: 0 0 28px 0;
+    line-height: 22px;
   }
 
   .techs__heading {

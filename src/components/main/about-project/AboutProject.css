@@ -3,6 +3,20 @@
   margin: 114px auto 0;
 }
 
+.about-project__line {
+  border-top: 1px solid #DADADA;
+  width: 100%;
+}
+
+.about-project__title {
+  font-size: 22px;
+  letter-spacing: -1px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0 0 23px 0;
+  line-height: 1.2;
+}
+
 .about-project__item {
   margin-top: 70px;
   display: grid;
@@ -27,14 +41,14 @@
   margin: 0;
 }
 
-.line-steps {
+.about-project__steps {
   display: grid;
   grid-template-columns: 228px 2fr;
   grid-template-rows: 36px;
   margin: 110px 0;
 }
 
-.line-steps_green {
+.about-project__steps-green {
   background-color: #3DDC84;
   color: #000;
   font-size: 14px;
@@ -47,7 +61,7 @@
   align-items: center;
 }
 
-.line-steps_grey {
+.about-project__steps-gray {
   background-color: #303030;
   color: #fff;
   font-size: 14px;
@@ -60,7 +74,7 @@
   align-items: center;
 }
 
-.line-steps_article {
+.about-project__article {
   color: #8B8B8B;
   font-size: 14px;
   line-height: 17px;
@@ -92,7 +106,7 @@
     line-height: 18px;
   }
 
-  .line-steps {
+  .about-project__steps {
     grid-template-columns: 140px 2fr;
     margin: 93px 0;
   }
@@ -102,6 +116,12 @@
   .about-project {
     max-width: calc(100% - 36px);
     margin: 70px auto 0;
+  }
+
+  .about-project__title {
+    font-size: 18px;
+    margin: 0 0 28px 0;
+    line-height: 22px;
   }
 
   .about-project__item {
@@ -122,22 +142,22 @@
     line-height: 16px;
   }
 
-  .line-steps {
+  .about-project__steps {
     grid-template-columns: 100px 2fr;
     margin: 59px 0;
   }
 
-  .line-steps_green {
+  .about-project__steps-green {
     font-size: 11px;
     line-height: 13px;
   }
   
-  .line-steps_grey {
+  .about-project__steps-gray {
     font-size: 11px;
     line-height: 13px;
   }
 
-  .line-steps_article {
+  .about-project__article {
     font-size: 11px;
     line-height: 13px;
     margin: 10px 0 0 0;

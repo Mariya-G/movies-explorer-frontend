@@ -1,4 +1,4 @@
-.profile__btn {
+.profile-nav{
   display: flex;
   color: #fff;
   font-size: 14px;
@@ -14,6 +14,6 @@
   text-decoration: none;
 }
 
-.profile__btn:hover {
+.profile-nav:hover {
   background-color: rgba(49, 49, 49, .8);
 }

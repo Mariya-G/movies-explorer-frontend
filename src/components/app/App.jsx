@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
 import Main from '../main/Main';
@@ -12,9 +12,11 @@ import Register from '../register/Register';
 import './App.css';
 
 function App() {
+  const location = useLocation();
+
   return (
     <div className="pages">
-      <Header/>
+       {["/", "/movies", "/saved-movies", "/profile"].includes(location.pathname) && <Header/>}
       <Routes>
         <Route path="/" element={<Main/>}/>
         <Route path="/movies" element={<Movies/>}/>
@@ -24,7 +26,7 @@ function App() {
         <Route path="/signup" element={<Register/>}/>
         <Route path='*' element={<PageNotFound/>}/>
       </Routes>
-      <Footer/>
+      {["/", "/movies", "/saved-movies"].includes(location.pathname) &&  <Footer/>}
     </div>
   );
 }

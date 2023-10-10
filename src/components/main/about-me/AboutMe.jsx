@@ -5,8 +5,8 @@ import photo from '../../../images/photo.png';
 function AboutMe() {
   return (
     <section id="student" className="about-me">
-      <h2 className="main__title about-me__title">Студент</h2>
-      <div className="main__line about-me__line"></div>
+      <h2 className="about-me__title">Студент</h2>
+      <div className="about-me__line"></div>
       <article className="about-me__two-colums">
         <div className="about-me__content">
           <p className="about-me__name">Виталий</p>

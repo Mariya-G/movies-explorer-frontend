@@ -34,7 +34,7 @@
     transform: translateX(-67%);
   }
 
-  .burger-menu__button_close {
+  .burger-menu__button-close {
     background: url(../../images/burger-close.svg) no-repeat transparent;
     width: 32px;
     height: 34px;
@@ -45,7 +45,7 @@
     margin: 22px 14px 0 0;
   }
 
-  .burger-menu__button_close:hover {
+  .burger-menu__button-close:hover {
     opacity: .8;
   }
 

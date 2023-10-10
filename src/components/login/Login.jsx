@@ -1,7 +1,7 @@
 import React from "react";
 import './Login.css';
 import { Link } from 'react-router-dom';
-import logo from '../../images/logo.png';
+import logo from '../../images/logo.svg';
 
 function Login() {
   return (
@@ -14,13 +14,13 @@ function Login() {
       <span className="form-auth__subtitle">E-mail</span>
         <input className="form-auth__input" type="email" 
           id="email" name="email" minLength="2" maxLength="40"
-          placeholder="Введите Email"
+          placeholder="Введите Email" required
         />
         <span className="form-auth__error"></span>
         <span className="form-auth__subtitle">Пароль</span>
         <input className="form-auth__input" type="password"
           id="password" name="password" minLength="2" maxLength="200"
-          placeholder="Введите пароль"
+          placeholder="Введите пароль" required
         />
         
         <span className="form-auth__error"></span>

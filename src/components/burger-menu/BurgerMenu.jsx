@@ -4,15 +4,15 @@ import ProfileNav from '../profile-nav/ProfileNav';
 import './BurgerMenu.css';
 function BurgerMenu(props) {
   return (
-      <section className={`burger-menu ${props.isMenuOpen ? "burger-menu_opened" : ""}`}>
-        <div className="burger-menu__container">
-          <button className="burger-menu__button_close" onClick={props.handleBurgerMenuClose}></button>
-          <Navigation handleBurgerMenuClose={props.handleBurgerMenuClose}/>
-          <div className="burger-menu__profile">
-            <ProfileNav handleBurgerMenuClose={props.handleBurgerMenuClose}/>
-          </div>
+    <section className={`burger-menu ${props.isMenuOpen ? "burger-menu_opened" : ""}`}>
+      <div className="burger-menu__container">
+        <button className="burger-menu__button-close" onClick={props.handleBurgerMenuClose}></button>
+        <Navigation handleBurgerMenuClose={props.handleBurgerMenuClose}/>
+        <div className="burger-menu__profile">
+          <ProfileNav handleBurgerMenuClose={props.handleBurgerMenuClose}/>
         </div>
-      </section>
+      </div>
+    </section>
   );
 };
 

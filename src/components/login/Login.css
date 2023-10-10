@@ -4,6 +4,7 @@
   flex-direction: column;
   max-width: 396px;
   margin: 0 auto;
+  padding: 162px 0 0 0;
 }
 
 .form-auth__logo {
@@ -81,7 +82,7 @@
 }
 
 .form-auth__button-reg {
-  margin: 91px 0 18px 0;
+  margin: 74px 0 2px 0;
 }
 
 .form-auth__question {
@@ -110,8 +111,17 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 450px) {
   .form-auth{
     max-width: 260px;
   }
+
+  .form-auth__title {
+    text-align: center;
+  }
+
+  .form-auth__logo {
+    margin: 70px auto 0;
+    display: block;
+}
 }

@@ -4,7 +4,7 @@ import './Profile-Nav.css';
 
 function ProfileNav(props) {
   return(
-    <Link to="/profile" onClick={props.handleBurgerMenuClose} className="profile__btn">Аккаунт</Link>
+    <Link to="/profile" onClick={props.handleBurgerMenuClose} className="profile-nav">Аккаунт</Link>
   )
 }
 
