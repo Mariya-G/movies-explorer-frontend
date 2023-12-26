@@ -87,7 +87,7 @@ function App() {
         });
   }, [loggedIn]);
 
-  //Регистрация
+  // Регистрация
   const isRegisterUser = ({ name, email, password }) => {
     setDisabled(true);
     register({ name, email, password })
