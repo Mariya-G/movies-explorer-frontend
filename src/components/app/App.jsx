@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Routes,
-  Route,
-  useNavigate,
-  useLocation,
-} from "react-router-dom";
+import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
@@ -136,9 +131,7 @@ function App() {
       })
       .catch((error) => {
         if (error === 400) {
-          setErrorServer(
-            "При авторизации произошла ошибка"
-          );
+          setErrorServer("При авторизации произошла ошибка");
         } else if (error === 401) {
           setErrorServer("Вы ввели неправильный логин или пароль");
         }
@@ -161,7 +154,7 @@ function App() {
       })
       .catch((error) => console.log(`Ошибка: ${error}`));
   };
-  
+
   // Редактирование пользователя
   const handleEditProfile = (newData) => {
     setDisabled(true);
@@ -227,7 +220,7 @@ function App() {
       });
   }
 
-  //Удаление фильма из избранного
+  // Удаление фильма из избранного
   function handleDeleteMovie(movie) {
     const movieId = saveMovies.find(
       (saveMovie) => saveMovie.movieId === movie.id
