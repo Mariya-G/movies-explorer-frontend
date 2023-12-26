@@ -1,10 +1,10 @@
 import React from 'react';
 import './MoreMovies.css';
 
-function MoreMovies(){
+function MoreMovies({loadMore}){
   return(
     <section className="more-movies">
-      <button type="button" className="more-movies__button">Еще</button>
+      <button type="button" className="more-movies__button" onClick={loadMore}>Еще</button>
     </section>
   );
 }
