@@ -1,6 +1,15 @@
 .movie-card {
   position: relative;
   cursor: pointer;
+  max-height: 231px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie-card__link {
+  display: flex;
+  justify-content: center;
 }
 
 .movie-card__button-save {
@@ -10,7 +19,7 @@
   right: 14px;
   top: 14px;
   border: none;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
   height: 21px;
   width: 72px;
   background: url(../../images/save.svg);
@@ -19,7 +28,7 @@
 
 .movie-card:hover .movie-card__button-save {
   opacity: 1;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 
 .movie-card__button-save_active {
@@ -27,7 +36,7 @@
   opacity: 1;
   width: 21px;
 }
-.movie-card__button-delete {
+.movie-card__button-save_delete {
   background: url(../../images/delete.svg) transparent no-repeat;
   opacity: 1;
   width: 21px;
@@ -36,7 +45,7 @@
 
 .movie-card__button-delete:hover {
   opacity: 1;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 
 .movie-card__wrap {
@@ -45,6 +54,7 @@
   padding: 11px 14px 0;
   box-sizing: border-box;
 }
+
 .movie-card__title {
   font-size: 13px;
   color: #fff;
@@ -56,10 +66,10 @@
 .movie-card__times {
   margin: 0;
   display: flex;
-  background-color: #2F2F2F;
+  background-color: #2f2f2f;
   justify-content: center;
   align-items: center;
-  color: #8B8B8B;
+  color: #8b8b8b;
   font-size: 11px;
   line-height: 1;
   font-weight: 400;
@@ -70,8 +80,10 @@
 }
 
 .movie-card__image {
-  object-fit: cover;
+  object-fit: contain;
   max-width: 100%;
+  max-height: 201px;
+  display: flex;
 }
 
 @media screen and (max-width: 768px) {
@@ -85,7 +97,7 @@
     font-size: 12px;
     line-height: 15px;
   }
-  
+
   .movie-card__wrap {
     padding: 13px 0 0 0;
   }
